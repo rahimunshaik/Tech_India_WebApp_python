@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Registered Volunteers</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <h1>Registered Volunteers</h1>
+  <ul>
+    {% for volunteer in volunteers %}
+      <li>
+        Name: {{ volunteer.name }}<br>
+        Location: {{ volunteer.location }}<br>
+        Spoken Languages: {{ volunteer.spoken_languages }}<br>
+        Availability: {{ volunteer.availability }}<br>
+        <hr>
+      </li>
+    {% endfor %}
+  </ul>
+  <a href="{{ url_for('index') }}">Back to Registration</a>
+</body>
+</html>

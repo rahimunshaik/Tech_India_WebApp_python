@@ -1,0 +1,14 @@
+Explanation of the Directory Structure:
+
+app.py: This is the main Python file that contains the web application logic.
+templates/: This directory holds the HTML templates for the web pages.
+static/: This directory contains static files like CSS stylesheets.
+data/: This directory holds the classroom_data.json file containing classroom information.
+ 
+## Step-2
+Installing Flask (pip install Flask) before running the app.py file.
+
+Open a terminal or command prompt in the web_application directory (where your app.py file is located).
+
+Run the Flask application using the following command:python app.py
+Flask will start the development server, and you should see an output similar to:-* Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
